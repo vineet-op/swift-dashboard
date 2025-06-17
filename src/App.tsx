@@ -8,14 +8,14 @@ import Notfound from './components/Notfound/Notfound'
 function App() {
   return (
     <BrowserRouter>
-      <div className='min-h-screen w-screen bg-neutral-100 overflow-hidden'>
+      <main className='min-h-screen w-screen bg-neutral-100 overflow-hidden'>
         <Navbar />
         <Routes>
           <Route path="/" element={<Profile />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
-      </div>
+      </main>
     </BrowserRouter>
   )
 }

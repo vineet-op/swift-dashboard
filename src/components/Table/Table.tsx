@@ -241,7 +241,7 @@ export default function App() {
                         Next
                     </Button>
 
-                    <div className="bg-white">
+                    <div>
                         <Select
                             value={pageSize.toString()}
                             onValueChange={(value) => {
@@ -252,9 +252,9 @@ export default function App() {
                             <SelectTrigger className="w-[120px] cursor-pointer bg-white">
                                 <SelectValue placeholder="Page size" />
                             </SelectTrigger>
-                            <SelectContent className="cursor-pointer">
+                            <SelectContent className="cursor-pointer bg-white">
                                 {PAGE_SIZE_OPTIONS.map((size) => (
-                                    <SelectItem className="cursor-pointer" key={size} value={size.toString()}>
+                                    <SelectItem className="cursor-pointer bg-white" key={size} value={size.toString()}>
                                         {size} / Page
                                     </SelectItem>
                                 ))}

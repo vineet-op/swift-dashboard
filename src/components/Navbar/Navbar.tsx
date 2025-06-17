@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 const Navbar = () => {
     return (
-        <motion.div
+        <motion.nav
             initial={{
                 opacity: 0,
                 filter: "blur(10px)",
@@ -32,7 +32,7 @@ const Navbar = () => {
                     Ervin Hovel
                 </div>
             </div>
-        </motion.div>
+        </motion.nav>
     )
 }
 
